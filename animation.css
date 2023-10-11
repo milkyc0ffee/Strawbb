@@ -1,0 +1,19 @@
+.fadein {
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#push:hover{
+    animation: push 0.3s linear 1;
+  }
+@keyframes push{
+    50%  {transform: scale(0.8);}
+}
+.fadein-delay {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+
+}

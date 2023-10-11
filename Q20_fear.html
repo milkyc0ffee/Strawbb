@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> are you scared? </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="basic.css">
+<style> 
+body {
+    background: rgb(40, 38, 38);
+}
+.bg {
+    background-image: url('https://cdn.discordapp.com/attachments/1158713002288230430/1159172059960705074/IMG_6581.PNG?ex=651eea9b&is=651d991b&hm=4a80367e62f5339af37b15cb469429bb8392ac8d1b4bd9986efa2166f37f0d3a&');
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.b {
+    color: #F5F5F5AD;
+    font-family: Amatic Regular; 
+    font-weight: bolder;
+    opacity: 0.1;
+}
+.b:hover {
+    color: #530f0f;
+    opacity: 1;
+}
+.a{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.a:before,
+.a:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.a:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.a:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+</style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="main">
+      <!-- BOX contains white square -->
+      <div class="box">
+          <!-- QUESTION HEADER -->
+          <div class="question">
+              <h1 style="font-size: 45px; font-weight: bolder;"> What scares you the most? </h1>
+          </div>
+
+          <!-- CHOICES -->
+          <div class="choices">
+              <div class="ind">
+
+                <form action="Q21_game.html">
+                  <div id="push"><button> Darkness </button> <br> </div>
+                  <div id="push"><button> Insects </button> <br> </div>
+                  <div id="push"><button> Fear of the unknown</button> <br> </div>
+                  <div class="a"> <button class="b" style="font-family: Amatic Regular;font-weight: bolder;"> Someone standing behind you right now.</button> <br> </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

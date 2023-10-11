@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Milky Honey;
+    src:url('fonts/Milky\ Honey.ttf')
+}
+@font-face {
+    font-family : Amatic Regular;
+    src:url('fonts/AmaticSC-Regular.ttf')
+}
+@font-face {
+    font-family: GrandRainbow;
+    src: url('fonts/Grandrainbowdemo-BWpWd.otf')
+}
+@font-face {
+    font-family: Short Stack;
+    src: url('fonts/ShortStack-Regular.ttf');
+}
+
+a:link, a:visited {
+    color:black;
+    text-decoration: none;
+    background-color: none;
+}
+a:hover {
+    color: #f14864 ;
+    text-decoration: none;
+}
+
+body {
+    background: #ff8ea3;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size:xx-large ;
+}
+
+button {
+    font-family: Short Stack;
+    background: none;
+    border: none;
+    font-size: xx-large;
+    cursor:pointer;
+}
+button:hover {
+    color: #f14864 ;
+}
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: #ff8ea3;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#f14864;
+    border-radius: 50px;
+    box-shadow:0px 0px 6px 2px rgba(0, 0, 0, 0.5) inset;
+}
+img {
+    pointer-events: none;
+    user-select: none;
+}
+* {
+    border: 0px;
+    margin: 0px;
+    font-family: Short Stack;
+    overflow: hidden;
+}
+.main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    }
+.box {
+    background-color: #F5F5F5AD;
+    width: 900px;
+    margin: auto;
+    }
+.question {
+    margin-top: 50px;
+    }
+.choices {
+    padding: 10px;
+    margin-left: 150px;
+    text-align: left;
+    position: inherit;
+    margin-top: 15px;
+}
+#push {
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    font-size: 50px;
+    max-width: fit-content;
+}
+.bg {
+    background-position: top right;
+}

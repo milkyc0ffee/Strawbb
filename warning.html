@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title> Warning! </title>
+    <link rel="stylesheet" href="basic.css">
+<style>
+    * {
+        overflow: visible;
+    }
+    .bg {
+        background-image: url('https://cdn.discordapp.com/attachments/1158713002288230430/1158713051927806052/IMG_6534.PNG?ex=651d3f1f&is=651bed9f&hm=c8c29bfe8b6fffcb9462ec3b77b43aff9b6b1fb3602b7db8d414a01885e1f147&');
+        position: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    .warning{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    .question {
+        margin-top: 50px;
+    }
+    .choice {
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    /* Style the <a> tag */
+    .link {
+        background-color: #FF76A7;
+        font-family: GrandRainbow;
+        color:#FFF9E9;
+        border: none;
+        cursor: pointer;
+        font-size: 40px;
+        padding: 26px 200px;
+        border-radius:  70px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .link:hover {
+        background-color: #ee4a83;
+        color:#FFF9E9;
+    }
+
+    /* Animate the <a> tag */
+    #start {
+        margin-top: 50px;
+        height: 100px;
+    }        
+    #start:hover {
+        animation: push 0.2s linear 1;
+    }
+    @keyframes push {
+        50% {transform: scale(0.9);}
+    }
+</style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="warning">
+        <!-- BOX contains white square -->
+        <div class="box">
+            <div class="question">
+                <h1 style="font-size: 40px; font-weight: bolder; color:darkred;"> WARNING </h1>
+            </div>
+            <div class="choice">
+                <p>This quiz may contain sound effect and glitching effects. Quiz experience may change during play. May contain distressing or disturbing images. May have themes of paranoia. Player discretion is advised. </p>
+            </div>
+
+            <div id="start">
+                <a href="Q1_feel.html" class="link" style="color:#FFF9E9;" onmouseover="PlaySound('Click')">I understand</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOUND -->
+    <audio id="Click" src="click.wav"></audio>
+    <script src="sound.js"></script>     
+</body>
+</html>

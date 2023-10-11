@@ -1,0 +1,37 @@
+.right {
+    position: fixed;
+    /* top,left,bottom,right */
+    clip-path: inset(0 0 0 15%);
+    bottom: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.heartdiv {
+    width:550px;
+    height: 600px;
+    position:fixed;
+    top: -1%;
+    left:-1.5%;
+}
+.heart{
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.welcome {
+    max-width: 100%;
+    height: 100%;
+    clip-path: inset(25% 0 20% 0);
+}
+.welcomediv {
+    position: absolute;
+    justify-content: center;
+    display:flex;
+    width: 95%;
+    height: 100%;
+    top: -10%;
+    left:4%;
+}

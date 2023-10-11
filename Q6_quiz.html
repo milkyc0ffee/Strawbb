@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>What Strawberry Dessert Are You? </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="sound.js"></script>
+<style>  
+.bg {
+    background-image: url('https://cdn.discordapp.com/attachments/1158713002288230430/1158713051927806052/IMG_6534.PNG?ex=651d3f1f&is=651bed9f&hm=c8c29bfe8b6fffcb9462ec3b77b43aff9b6b1fb3602b7db8d414a01885e1f147&');
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+</style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="main">
+        <!-- BOX contains white square -->
+        <div class="box">
+            <!-- QUESTION HEADER -->
+            <div class="question">
+                <h1 style="font-size: 45px; font-weight: bolder;">6 : Are you taking a quiz right now? <br>₍՞◌′ᵕ‵ू◌₎♡ </h1>
+            </div>
+
+            <!-- CHOICES -->
+            <div class="choices">
+                <div class="ind">
+
+                    <form action="Q7_ghost.html">
+                        <div id="push"><button onmouseover="PlaySound('Click')"> Yes        </button> <br> </div>
+                        <div id="push"><button onmouseover="PlaySound('Click')"> No        </button> <br> </div>
+                        <div id="push"><button onmouseover="PlaySound('Click')"> Unsure        </button> <br> </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOUND -->
+    <audio id="Click" src="click.wav"></audio>
+</body>
+</html>
